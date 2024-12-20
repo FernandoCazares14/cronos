@@ -1,0 +1,16 @@
+{
+  "name": "cronos",
+  "version": "1.0.0",
+  "description": "Código fuente del sitio web de Cronos Instruments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemailer": "^6.9.16"
+  }
+}

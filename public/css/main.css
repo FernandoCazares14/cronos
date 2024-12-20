@@ -1,0 +1,843 @@
+@font-face {
+    font-family: 'LeelawadeNoBold';
+    src: url('../fonts/46240451791.ttf') format('truetype');
+    font-weight: normal; /* Opcional: Define el peso (normal, bold, etc.) */
+    font-style: normal; /* Opcional: Define el estilo (normal, italic, etc.) */
+}
+
+@font-face {
+    font-family: 'LeelawadeBold';
+    src: url('../fonts/46842438157.ttf') format('truetype');
+    font-weight: normal; /* Opcional: Define el peso (normal, bold, etc.) */
+    font-style: normal; /* Opcional: Define el estilo (normal, italic, etc.) */
+}
+
+
+/* Menu */
+.navbar-toggler{
+    position: relative;
+    z-index: 1100;
+}
+
+.navbar{
+    height: 100px;
+    background-color: white !important;
+    padding: 15px;
+}
+
+.nav-item a{
+    font-family: 'LeelawadeBold', sans-serif;
+}
+
+.logo{
+    display: contents;
+}
+
+.logo img{
+    width: 70%;
+    position: relative;
+    z-index: 1100;
+}
+
+.menu-opciones li, button{
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.btn-certificado{
+    background-color: #08535A !important;
+    border-color: #08535A !important;
+    width: 200px;
+}
+
+.fullscreen-menu {
+    position: fixed; /* Hace que el menú sea fijo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cubre toda la pantalla */
+    background-color: white; /* Fondo para el menú */
+    z-index: 1050; /* Asegura que esté encima de otros elementos */
+    overflow-y: auto; /* Permite desplazamiento si hay muchas opciones */
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fullscreen-menu.show {
+    transform: translateY(0); /* Visible cuando se muestra */
+}
+
+.fullscreen-menu.collapse {
+    transform: translateY(-100%); /* Oculta el menú hacia arriba */
+}
+
+.fullscreen-menu.show {
+    transform: translateY(0); /* Muestra el menú */
+}
+
+.fullscreen-menu .menu-opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Centra las opciones verticalmente */
+}
+
+.fullscreen-menu .nav-link {
+    font-size: 1.5rem; /* Tamaño más grande para opciones */
+    margin: 10px 0;
+}
+
+/* --- HOME --- */
+.containerHome{
+    padding-left: 0px;
+    padding-right: 45px;
+    padding-bottom: 50px; 
+    background-color: #25B5BA;
+    position: relative;
+}
+
+.home-img-container img{
+    width: -webkit-fill-available;
+}
+
+.lineas_1{
+    position: absolute;
+    bottom: 37px;
+    left: 0;
+    width: 70% !important;
+    z-index: 2;
+}
+
+/* Home text */
+.titulo-cronos{
+    margin-top: 40px;
+}
+
+.titulo-cronos p{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'LeelawadeBold', sans-serif;
+    color: #08535A;
+}
+
+.titulo-cronos h1{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'LeelawadeBold', sans-serif;
+    color: #25B5BA;
+}
+
+.texto-cronos{
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.texto-cronos p{
+    color: black;
+}
+
+.container-img-bienvenido{
+    text-align: center;
+
+}
+
+.container-img-bienvenido img{
+    width: 270px;
+}
+
+/* --- Quienes somos --- */
+.container-info-somos{
+    background-color: #25B5BA;
+    padding-top: 30px;
+}
+
+.quienesSomos{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #08535A;
+}
+
+.quienesSomos h1, p{
+    color: white;
+    text-align: center;
+    font-family: 'LeelawadeBold', sans-serif;
+}
+
+.img-container-somos img{
+    width: 90%;
+}
+
+.lineas_2{
+    display: none;
+    position: absolute;
+    bottom: 37px;
+    left: 0;
+    width: 70% !important;
+    z-index: 2;
+}
+
+.container-fondo-certificacion{
+    padding: 0;
+}
+
+.fondo-certificaion{
+    background-image: url("../img/fondo_certificacion.png");
+    height: 600px;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: left; /* Centra la imagen */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-certificacion{
+    border: 1px solid #25B5BA;
+    margin: 10px;
+    background-color: #25B5BA;
+    border-radius: 0px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-certificacion p{
+    padding: 10px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.btn-contactanos{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #08535A;
+    border-color: #08535A;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+/* --- Productos --- */
+.container-productos{
+    background-color: #25B5BA;
+    padding-bottom: 50px;
+}
+
+.titulo-productos h1{
+    text-align: center;
+    font-family: 'LeelawadeBold', sans-serif;
+    color: white;
+    padding-top: 30px;
+}
+
+.carousel-item img{
+    width: 60% !important;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.carousel-caption{
+    display: flex !important;
+    justify-content: center;
+    bottom: -2rem !important;
+}
+
+.carousel-caption a{
+    text-decoration: none;
+}
+
+.carousel-caption a:hover{
+    color: white;
+}
+
+.carousel-caption h5{
+    font-family: 'LeelawadeNoBold', sans-serif;
+    width: fit-content;
+    background-color: #6F6973;
+    border-color: #6F6973;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 0.8rem !important;
+
+}
+
+/* Refacciones */
+.titulo-refacciones{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.titulo-refacciones h2{
+    font-family: 'LeelawadeBold', sans-serif;
+    color: #08535A;
+    text-align: center;
+    font-size: 26.8px;
+}
+
+.subtitulo-refacciones h3{
+    font-family: 'LeelawadeBold', sans-serif;
+    color: #08535A;
+    text-align: center;
+}
+
+.subtitulo-refacciones a{
+    text-decoration: none;
+}
+
+.subtitulo-refacciones p{
+    border: 1px solid #08535A;
+    background-color: #08535A;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: 'LeelawadeNoBold', sans-serif;
+    margin-top: 30px;
+}
+
+.icons-refacciones-arrows{
+    background-color: #25B5BA;
+    border-radius: 100px;
+
+}
+
+.container-btn-contactanos{
+    background-color: #25B5BA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.container-btn-contactanos p{
+    font-family: 'LeelawadeBold', sans-serif;
+    color: #08535A;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.container-btn-contactanos button{
+    background-color: #08535A;
+    border-color: #08535A;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 150px;
+}
+
+
+
+/* --- Contacto --- */
+.container-form{
+    background-color: #25B5BA;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-banner-contacto{
+    padding: 0;
+}
+
+.text-contacto{
+    text-align: center;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-body p{
+    font-family: 'LeelawadeBold', sans-serif !important;
+    font-size: 1.5rem;
+}
+
+.card-body img{
+    width: -webkit-fill-available;
+}
+
+.text-contacto img{
+    width: 20%;
+}
+
+.text-contacto p{
+    margin-top: 16px;
+}
+
+.fondo-contacto{
+    background-image: url("../img/foto_contacto.png");
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-contacto-text{
+    border-radius: 10px;
+    background-color: #08535A;
+    border-color: #08535A;
+
+}
+
+.banner-contacto-text p{
+    font-family: 'LeelawadeNoBold', sans-serif;
+    color: white;
+}
+
+.container-text-area{
+    margin-top: 20px;
+}
+
+.form-label{
+    font-family: 'LeelawadeNoBold', sans-serif;
+    color: white;
+}
+
+textarea{
+    width: -webkit-fill-available;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.btn-container{
+    text-align: center;
+}
+
+.btn-enviar-contacto{
+    width: 180px;
+    background-color: #08535A;
+    border-color: #08535A;
+    color: white;
+}
+
+.btn-enviar-contacto:hover{
+    background-color: #25B5BA;
+    border-color: #08535A;
+    color: #08535A;
+}
+
+
+/* Footer */
+footer{
+    margin-top: 70px;
+}
+
+.container-footer{
+    padding: 0;
+}
+
+.fondo-footer{
+    height: 420px;
+    background-image: url("../img/footer_mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-cronos{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo-cronos img{
+    width: 80%;
+}
+
+.info-footer{
+    margin-top: 30px;
+}
+
+.info-footer p{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    font-family: 'LeelawadeNoBold', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.aviso-privacidad{
+    margin-top: 20px;
+}
+
+.aviso-privacidad a{
+    text-decoration: none;
+}
+
+.aviso-privacidad p{
+    font-family: 'LeelawadeNoBold', sans-serif;
+}
+
+/* CSS Tablet */
+@media (min-width: 768px){
+
+    /* Menu */
+    .logo img{
+        width:35%;
+    }
+
+    .menu-opciones li{
+        margin: 0;
+    }
+    
+    /* Home */
+    .containerHome{
+        padding-bottom: 100px;
+        padding-right: 55px;
+        padding-bottom: 60px;
+    }
+
+    .lineas_1{
+        bottom: 32px;
+    }
+
+    .container-bienvenida{
+        display: flex;
+        align-items: center;
+        min-height: 500px;
+    }
+
+    .container-img-bienvenido img{
+        width: 300px;
+    }
+
+    .container-bienvenido{
+        padding: 45px;
+    }
+
+    .titulo-cronos p{
+        text-align: start;
+        border-left: 20px solid #08535A;
+        padding-left: 4%;
+    }
+
+    .titulo-cronos h1{
+        text-align: start;
+        padding-left: 10%;
+    }
+
+    .texto-cronos{
+        padding-left: 10%;
+    }
+
+    .texto-cronos p{
+        text-align: start;
+    }
+
+    /* Quienes somos */
+    .container-info-somos{
+        position: relative;
+        min-height: 500px;
+    }
+
+    .quienesSomos{
+        padding: 25px;
+        margin-top: 100px;
+    }
+
+    .quienesSomos h1{
+        text-align: start;
+        width: fit-content;
+    }
+
+    .quienesSomos p{
+        text-align: start;
+        width: 450px;
+    }
+
+    .img-container-somos img{
+        width: 40%;
+        position: absolute;
+    }
+
+    .lineas_2{
+        display: block;
+        bottom: 0;
+        width: 70%;
+    }
+
+    .img-container-somos img{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 290px;
+    }
+
+    .fondo-certificaion{
+        justify-content: right;
+    }
+
+    .texto-certificacion{
+        margin: 10px 20px 10px 10px;
+    }
+
+    /* Productos */
+    .carousel-item img{
+        width: 60% !important;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    
+    .carousel-caption{
+        display: flex !important;
+        justify-content: center;
+        bottom: -0.55rem !important;
+    }
+
+    .carousel-caption h5{
+        font-size: 1rem !important;
+    }
+
+    .carousel-item img{
+        width: 60% !important;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+
+    /* Refacciones */
+    .titulo-refacciones h2{
+        font-size: 33.52px;
+    }
+
+    .subtitulo-refacciones{
+        text-align: center;
+    }
+
+    .subtitulo-refacciones a{
+        display: inline-block;
+    }
+
+    /* Contacto */
+    .container-form{
+        padding: 60px;
+    }
+    
+    .card-body img{
+        width: 40%;
+    }
+    /* Footer */
+    .fondo-footer{
+        background-image: url("../img/piedepagina.png");
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin-top:50px;
+    }
+
+    .container-info-footer{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+
+    .logo-cronos{
+        display: none;
+    }
+
+
+    .info-footer p{
+        text-align: justify;
+    }
+}
+
+/* CSS DESKTOP */
+@media (min-width: 992px){
+
+    /* Menu */
+    .logo img{
+        width: 350px;
+    }
+
+    .navbar-collapse{
+        justify-content: end;
+    }
+
+    .menu-opciones li,button{
+        font-size: 1rem;
+    }
+
+    .fullscreen-menu {
+        position: static; /* Cambia a posición estática en desktop */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        transform: none; /* Elimina transformaciones */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .fullscreen-menu .menu-opciones {
+        flex-direction: row; /* Cambia a disposición horizontal */
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .fullscreen-menu .nav-link {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .fullscreen-menu.collapse {
+        transform: none;
+    }
+
+    .navbar-toggler {
+        display: none; /* Oculta el botón hamburguesa en desktop */
+    }
+
+    /* Home */
+    .containerHome{
+        padding-bottom: 100px;
+        padding-right: 70px;
+        padding-bottom: 85px;
+    }
+
+    .lineas_1{
+        bottom: 41px;
+    }
+
+    .container-bienvenida{
+        display: flex;
+        align-items: center;
+        min-height: 650px;
+    }
+
+    .container-bienvenido{
+        padding: 60px;
+    }
+
+    .titulo-cronos p{
+        padding-left: 5%;
+    }
+
+    .container-img-bienvenido img{
+        width: 500px;
+    }
+    
+    .container-img-bienvenido img{
+        width: 400px;
+    }
+
+    .carousel-item img{
+        width: 40% !important;
+    }
+
+    /* Refacciones */
+    .titulo-refacciones h2{
+        font-size: 40px;
+    }
+
+    .subtitulo-refacciones{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .subtitulo-refacciones p{
+        width: 350px;
+    }
+
+    /* Footer */
+    .aviso-privacidad{
+        align-content: center;
+    }
+
+    .container-info-footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+}
+
+/* CSS DESKTOP Pantallas mas grandes */
+@media (min-width: 1200px){
+    /* HOME */
+    .titulo-cronos p {
+        padding-left: 6%;
+    }
+
+    .container-bienvenida{
+        display: flex;
+        align-items: center;
+        min-height: 700px;
+        justify-content: center;
+    }
+
+    /* Quienes somos */
+    .quienesSomos {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .fondo-certificaion{
+        background-position: inherit;
+        height: 800px;
+    }
+
+    .texto-certificacion {
+        margin-right: 160px;
+        width: 30%;
+        padding: 30px;
+    }
+
+    .container-info-somos {
+        position: relative;
+        min-height: 700px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .lineas_2{
+        width: 63% !important;
+    }
+
+    .img-container-somos{
+        text-align: center;
+    }
+
+    .img-container-somos img{
+        width: 470px;
+        position: relative;
+    }
+}
+
+@media (min-width: 1400px){
+    /* HOME */
+    .titulo-cronos p {
+        padding-left: 7%;
+    }
+
+    .container-bienvenida{
+        min-height: 900px;
+    }
+
+    .container-img-bienvenido img{
+        width: 600px;
+    }
+
+    /* Quienes somos */
+    .fondo-certificaion{
+        background-position: inherit;
+        height: 1000px;
+        background-size: cover;
+    }
+
+    .img-container-somos img{
+        width: auto;
+        position: relative;
+    }
+
+    .texto-certificacion {
+        width: 25%;
+    }
+}
