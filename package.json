@@ -2,7 +2,7 @@
   "name": "cronos",
   "version": "1.0.0",
   "description": "Código fuente del sitio web de Cronos Instruments",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "netlify deploy --prod"
